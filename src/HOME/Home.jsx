@@ -44,12 +44,12 @@ const Home = () => {
 
   return (
     <div className='Home' >
-      {/* <Slider className='Slider' {...settings}>
+      <Slider className='Slider' {...settings}>
         {item?.map((item) => (
           <div key={item.id} className='slider_wrap'>
             <img className='image' key={item.id} src={item.image} />
           </div>))}
-      </Slider> */}
+      </Slider>
       {loading ? <img src={Gif} alt="loading..." /> : <div className='Home_wrap'>
         {item?.map((item) => (
           <Link style={theSetter}  key={item.id} className='Card' to={`/detail/${item.id}`}>
