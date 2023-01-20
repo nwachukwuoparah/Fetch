@@ -3,7 +3,7 @@ import { useState, useEffect,useContext } from 'react'
 import circle from './info-circle-solid.svg'
 import axios from 'axios'
 import {Link } from 'react-router-dom'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Gif from '../Gif.gif'
@@ -44,12 +44,12 @@ const Home = () => {
 
   return (
     <div className='Home' >
-      <Slider className='Slider' {...settings}>
+      {/* <Slider className='Slider' {...settings}>
         {item?.map((item) => (
           <div key={item.id} className='slider_wrap'>
             <img className='image' key={item.id} src={item.image} />
           </div>))}
-      </Slider>
+      </Slider> */}
       {loading ? <img src={Gif} alt="loading..." /> : <div className='Home_wrap'>
         {item?.map((item) => (
           <Link style={theSetter}  key={item.id} className='Card' to={`/detail/${item.id}`}>
