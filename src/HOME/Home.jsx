@@ -4,8 +4,8 @@ import circle from './info-circle-solid.svg'
 import axios from 'axios'
 import {Link } from 'react-router-dom'
 // import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import Gif from '../Gif.gif'
 import {ThemeContext} from '../Api/Contex'
 import { useDispatch } from 'react-redux'
