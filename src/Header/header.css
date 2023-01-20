@@ -1,0 +1,171 @@
+* {
+  margin: 0px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #99582a;
+  box-sizing: border-box;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  z-index: 1000000;
+}
+
+.head_wrap {
+  width: 95%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_wrap img {
+  width: 50px;
+}
+
+nav {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #f8f8f8;
+}
+
+.dropdown {
+  width: 150px;
+  background-color: #432818;
+  position: absolute;
+  top: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px 5px 10px;
+  /* gap: 10px; */
+}
+
+.dropdown1 {
+  text-decoration: none;
+  color: inherit;
+  margin-top: 10px;
+}
+
+.invisible {
+  width: 150px;
+  height: 35px;
+  background-color: none;
+  position: absolute;
+  top: 45px;
+  /* background-color: red; */
+}
+
+.categories {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories_wrap {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0px 10px 0px;
+}
+
+.categories_Card {
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: inherit;
+  background-color: #ddd9d9;
+}
+
+.categories_Card img {
+  width: 100%;
+  height: 300px;
+  object-fit: fit;
+}
+
+.cartIcon {
+  display: flex;
+  gap: 5px
+}
+
+.toggle_wrap {
+  width: 50px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2px
+}
+
+.toggle_wrap1 {
+  width: 50px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2px
+}
+.Toggle{
+  display: none;
+}
+.side_bar{
+  display: none;
+}
+@media screen and (max-width:425px) {
+  .categories_wrap {
+    width: 100%;
+  }
+
+  .categories_Card {
+    width: 80%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .toggle_wrap1,
+  .toggle_wrap {
+    display: none;
+  }
+  .Toggle{
+    display: flex;
+  }
+  .side_bar{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    background-color: red;
+    position: absolute;
+    height: 800px;
+    width: 250px;
+    top: 80px;
+    left: 175px;
+  }
+  .cartImage{
+    display: none;
+  }
+  .side_bar_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    margin-top: 10px;
+  }
+}

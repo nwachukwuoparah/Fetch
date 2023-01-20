@@ -1,0 +1,29 @@
+.cart {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_wrap{
+  background-color: #f8f8f8;
+  /* height: 80%; */
+  width: 70%;
+  margin:100px 0px 50px 0px;
+}
+
+.cart_item{
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  gap: 20px;
+  /* background-color: red; */
+}
+
+.cart_item img{
+  width: 20%;
+  height: 100%;
+}
+
